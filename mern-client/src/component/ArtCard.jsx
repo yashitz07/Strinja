@@ -1,0 +1,83 @@
+import React, { useRef, useState } from 'react';
+// Import Swiper React components
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import "swiper/css/navigation";
+
+import { Autoplay, Pagination, Navigation } from "swiper/modules";
+import './Artcard.css';
+import { AiOutlineWhatsApp } from "react-icons/ai";
+
+// import required modules
+// import { Pagination } from 'swiper/modules';
+
+const ArtCard = ({headline, arts}) => {
+  const whatsapp = async (phoneNumber, art) => {
+    try {
+      const message = encodeURIComponent(`Hello, I'm interested in your art ${art.artName}.We will be interested in knowing furthur information`);
+      const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+      window.open(whatsappLink, '_blank');
+    } catch (error) {
+      console.error('Error generating WhatsApp link:', error);
+    }
+  };
+
+  return (
+    <div className='px-4 my-16 lg:px-24'>
+        <h2 className='text-center text-5xl font-bold text-black my-5'>{headline}</h2>
+        <div className='mt-12'>
+        <Swiper
+        slidesPerView={4}
+        spaceBetween={20}
+        pagination={{
+          clickable: true,
+        }}
+        breakpoints={{
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 5,
+            spaceBetween: 50,
+          },
+        }}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
+        modules={[Autoplay, Pagination, Navigation]}
+        className="mySwiper w-full h-full"
+      >
+        
+        {
+            arts.map(art => <SwiperSlide key={art._id}>
+                <a href={`/art/${art._id}`}>
+                    <div className='relative'>
+                        <img src={art.imgUrl} alt="" />
+                        <div className='absolute top-3 right-3 bg-green-500 hover:bg-black p-2 rounded' onClick={() => whatsapp('9104483829', art)}>
+                           <AiOutlineWhatsApp className='w-4 h-4 text-white'/>
+                        </div>
+                    </div>
+                    <div>
+                        <h3>{art.artName}</h3>
+                    </div>
+                </a>
+
+            </SwiperSlide>)
+        }
+        </Swiper>
+        </div>
+    </div>
+  )
+}
+
+export default ArtCard

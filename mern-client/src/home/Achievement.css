@@ -1,0 +1,17 @@
+.achievement .swiper {
+    width: 45%;
+    height: 45%;
+    
+  }
+  
+ .achievement .swiper-slide {
+    background-position: center;
+    background-size: cover;
+  
+  }
+  
+ .achievement .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  

@@ -1,0 +1,19 @@
+.banner .swiper {
+    width: 50%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    /* padding-left: 50px; */
+  }
+  
+ .banner .swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 350px;
+    height: 300px;
+  }
+  
+ .banner .swiper-slide img {
+    display: block;
+    width: 100%;
+  }
+  
