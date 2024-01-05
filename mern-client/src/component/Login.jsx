@@ -70,7 +70,7 @@ const Login = () => {
             <p className='text-red-700'>
               {error?"Email or Password is incorrect ":""}
             </p>
-                        {/* <p>Haven't an account? Please <a href="/sign-up" className='text-blue-700 underline'>Sign-Up</a> Here</p> */}
+            {/* <p>Haven't an account? Please <a href="/sign-up" className='text-blue-700 underline'>Sign-Up</a> Here</p> */}
             <p>Only admin can login here</p>
 						<div className="relative">
 							<button className="bg-blue-500 text-white rounded-md px-6 py-2">Login</button>

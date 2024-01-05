@@ -1,21 +1,14 @@
 import React, { useRef, useState } from 'react';
-// Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import "swiper/css/navigation";
-
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 import './Artcard.css';
 import { AiOutlineWhatsApp } from "react-icons/ai";
 
-// import required modules
-// import { Pagination } from 'swiper/modules';
-
 const ArtCard = ({headline, arts}) => {
+  // in this function ph no and art pass hoga as parameter
   const whatsapp = async (phoneNumber, art) => {
     try {
       const message = encodeURIComponent(`Hello, I'm interested in your art ${art.artName}.We will be interested in knowing furthur information`);

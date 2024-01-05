@@ -1,7 +1,4 @@
 import React, { useEffect, useState } from 'react'
-// import {strinjaVid} from "../assets/strinjaVideo.mp4"
-import videoFile from '../assets/strinjaVideo.mp4';
-import { Helmet } from 'react-helmet';
 
 
 const About = () => {
@@ -9,12 +6,9 @@ const About = () => {
 
     const togglePlay = () => {
         setIsPlaying(!isPlaying);
-
-        // Replace 'YOUR_VIDEO_LINK' with the actual link to your video
         const videoLink = 'https://www.instagram.com/reel/CoKpirVg2wf/?igsh=NmMwZ3VlcWtxa2k=';
 
         // Redirect to the video link
-        // window.location.href = videoLink;
         window.open(videoLink, '_blank');
     };
     return (
@@ -46,15 +40,6 @@ const About = () => {
                                         <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zM6.79 5.093A.5.5 0 0 0 6 5.5v5a.5.5 0 0 0 .79.407l3.5-2.5a.5.5 0 0 0 0-.814l-3.5-2.5z"></path>
                                     )}
                                 </svg>
-
-
-                                {/* {isPlaying && (
-                                    <video width="640" height="360" controls>
-                                        <source src={videoFile} type="video/mp4" />
-                                        Your browser does not support the video tag.
-                                    </video>
-                                )} */}
-
                             </div>
                         </div>
                     </div>
@@ -68,12 +53,7 @@ const About = () => {
                                 Welcome to our site
                             </h1>
                         </div>
-                        {/* <p class="mt-6 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400">
-                            At Strinja, we believe in crafting more than just gifts; we create timeless expressions that resonate deep within the hearts of your loved ones. Our handmade string art pieces go beyond the ordinary, offering a special touch that lingers in the soul.Each string art creation at Strinja is a labor of love, meticulously crafted with a personalized touch. Whether it's a depiction of a cherished face or a representation of their most beloved passion, our string art becomes a profound and meaningful gift, leaving an indelible impression.
-                            Strinja is more than a brand; it's a celebration of personal connections. The heart of our creations lies in the art of customization, turning each piece into a unique masterpiece that speaks directly to the recipient's heart. It goes beyond being just a gift; it's a symbol of shared memories and a testament to the beautiful moments that bind relationships.
-                            Strinja's creations are designed to deepen connections, not limited to romantic relationships but extending to all kinds of bonds. Our artwork is a bridge that brings people closer, fostering a sense of warmth, appreciation, and understanding
-
-                        </p> */}
+                    
                         <ul>
                             <p>
                                 <li className="mt-6 mb-10 text-base leading-7 text-gray-500 dark:text-gray-400"> <span className='font-bold'>Mission </span>-
