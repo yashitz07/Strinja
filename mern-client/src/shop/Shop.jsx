@@ -26,10 +26,7 @@ const Shop = () => {
             imgSrc={art.imgUrl}  
             
           >
-            {/* <img src={art.imgUrl} alt="" /> */}
-            {/* <div className='absolute top-3 right-3 bg-blue-600 hover:bg-black p-2 rounded'>
-                <AiOutlineWhatsApp className='w-4 h-4 text-white'/>
-            </div> */}
+            
             <h5 className="text-2xl font-bold tracking-tight text-gray-900 dark:text-white">
               <p>
                 {art.artName}

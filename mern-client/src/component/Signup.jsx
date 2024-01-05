@@ -1,3 +1,4 @@
+//this sing up page is havent used in website but may be we can use in future
 import React, { useContext, useState } from 'react'
 import { AuthContext } from '../contects/AuthProvider';
 import { useLocation, useNavigate } from 'react-router-dom';

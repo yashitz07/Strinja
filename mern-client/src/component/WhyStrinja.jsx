@@ -1,7 +1,6 @@
-import { Navbar } from 'flowbite-react'
+
 import React from 'react'
-import { Outlet } from 'react-router-dom'
-import MyFooter from './MyFooter'
+
 
 const WhyStrinja = () => {
   const handleUserSubmit = (event) =>{
@@ -42,11 +41,10 @@ const WhyStrinja = () => {
         <li className="mb-2 text-2xl">💅 Celebrate All Relationships</li>
         <li className="mb-2 text-2xl">🌈 Community of Creatives</li>
         <li className="mb-2 text-2xl">🎉 Versatile Art for Any Space</li>
-        {/* Add more creative points as needed */}
+       
       </ul>
     </div>
 
-    {/* Right side: Form for name, email, and message */}
     <div className="lg:w-1/2 p-8 bg-white rounded-lg shadow-md">
       <h2 className="text-3xl font-bold mb-4">Contact Us</h2>
       <form onSubmit={handleUserSubmit}>

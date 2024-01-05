@@ -4,6 +4,7 @@ import { Navigate, useLocation } from 'react-router-dom';
 import { Spinner } from 'flowbite-react';
 
 const PrivateRoute = ({children}) => {
+    //useLocation return the current location and stored it in const location.
     const {user,loading} = useContext(AuthContext);
     const location = useLocation();
     if(loading){

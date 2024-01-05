@@ -1,3 +1,4 @@
+// this is our best seller section
 import React, { useEffect, useState} from 'react'
 import ArtCard from '../component/ArtCard';
 
@@ -8,7 +9,6 @@ const FavoriteArts = () => {
     }, [])
   return (
     <div>
-        {/* <ArtCard/> */}
         <ArtCard arts={arts} headline="Our Best Seller"/>
     </div>
   )

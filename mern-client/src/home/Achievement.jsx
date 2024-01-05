@@ -5,18 +5,9 @@ import 'swiper/css';
 import 'swiper/css/pagination';
 import './Achievement.css';
 import "swiper/css/navigation";
-// import { EffectCube, Pagination } from 'swiper/modules';
-import { EffectCoverflow, Autoplay, Pagination, Navigation, EffectFade } from "swiper/modules";
+import {  Autoplay, Pagination } from "swiper/modules";
 const Achievement = () => {
-  // const swiperParams = {
-  //   loop: true,
-  //   spaceBetween: 20,
-  //   slidesPerView: 1,
-  //   navigation: {
-  //     nextEl: '.swiper-button-next',
-  //     prevEl: '.swiper-button-prev',
-  //   },
-  // };
+
   return (
     <div className='achievement my-12 px-4 lg:px-24'>
       <h2 className='font-bold text-5xl text-center mb-10 leading-snug'>Our Achievement</h2>

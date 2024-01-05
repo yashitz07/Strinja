@@ -3,7 +3,6 @@ import React, { useContext, useEffect, useState } from 'react'
 import { FaBarsStaggered, FaBlog, FaXmark } from "react-icons/fa6";
 import { AuthContext } from '../contects/AuthProvider';
 import Propic from "../assets/logo-2.png"
-import './Navbar.css';
 
 const Navbar = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);

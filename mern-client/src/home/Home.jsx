@@ -2,7 +2,6 @@ import React from 'react'
 import Banner from '../component/Banner'
 import FavoriteArts from './FavoriteArts'
 import FavArt from './FavArt'
-import OtherArt from './OtherArt'
 import Review from './Review'
 import About from '../component/About'
 import ContactUs from '../component/ContactUs'
@@ -14,7 +13,6 @@ const Home = () => {
         <Banner/>
         <FavoriteArts/>
         <FavArt/>
-        {/* <OtherArt/> */}
         <Achievement/>
         <Review/>
         <About/>

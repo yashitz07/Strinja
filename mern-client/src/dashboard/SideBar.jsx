@@ -1,6 +1,6 @@
 import { Sidebar } from 'flowbite-react';
 import { BiBuoy } from 'react-icons/bi';
-import { HiArrowSmRight, HiChartPie, HiInbox, HiOutlineCloudUpload, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
+import {  HiChartPie, HiInbox, HiOutlineCloudUpload, HiShoppingBag, HiTable, HiUser, HiViewBoards } from 'react-icons/hi';
 // import {userImg} from "../assets/strinja.jpg"
 import Propic from "../assets/logo-1.jpg"
 const SideBar = () => {

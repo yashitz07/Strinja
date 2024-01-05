@@ -1,17 +1,11 @@
 import React, { useRef, useState } from "react";
-// Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 import {FaStar} from "react-icons/fa6"
 import { Avatar } from 'flowbite-react';
 import Propic from "../assets/propic.jpg"
-// Import Swiper styles
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-
-// import "./styles.css";
-
-// import required modules
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
 const Review = () => {
   return (

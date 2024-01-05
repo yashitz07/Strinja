@@ -1,6 +1,6 @@
 
 import { Footer } from 'flowbite-react';
-import { BsDribbble, BsFacebook, BsInstagram, BsThreads, BsTwitter } from 'react-icons/bs';
+import {  BsFacebook, BsInstagram, BsThreads, BsTwitter } from 'react-icons/bs';
 import Propic from "../assets/logo-2.png"
 
 const MyFooter = () => {
