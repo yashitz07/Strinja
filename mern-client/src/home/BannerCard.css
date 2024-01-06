@@ -1,5 +1,5 @@
 .banner .swiper {
-  width: 50%;
+  width: 80%;
   padding-top: 50px;
   padding-bottom: 50px;
   /* padding-left: 50px; */
@@ -10,9 +10,9 @@
   background-size: cover;
   /* width: 350px;
   height: 300px; */
-  width: 80%; /* Example: 80% of the viewport width */
-max-width: 350px; /* Optional: Set a maximum width for each slide */
-height: 300px;
+  width: 80%; 
+  max-width: 350px;
+  height: 300px;
 }
 
 .banner .swiper-slide img {

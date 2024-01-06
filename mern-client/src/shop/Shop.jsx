@@ -19,7 +19,7 @@ const Shop = () => {
   return (
     <div className='mt-28 px-4 lg:px-24'>
       <h2 className='font-bold text-5xl text-center'>Our Art Gallery</h2>
-      <div className='grid gap-8 my-12 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-1'>
+      <div className='grid gap-8 my-12 lg:grid-cols-4 sm:grid-cols-2 md:grid-cols-3 grid-cols-2'>
         {
           arts.map( art=> <Card
             className="max-w-sm transition-transform transform hover:scale-110 bg-violet-100"

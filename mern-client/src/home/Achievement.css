@@ -14,4 +14,9 @@
     display: block;
     width: 100%;
   }
-  
+  @media (max-width: 768px) {
+    .achievement .swiper {
+      width: 100%;
+      height: auto;
+    }
+  }
