@@ -24,8 +24,7 @@ const ArtCard = ({headline, arts}) => {
         <h2 className='text-center text-5xl font-bold text-black my-5'>{headline}</h2>
         <div className='mt-12'>
         <Swiper
-        slidesPerView={4}
-        spaceBetween={20}
+        
         pagination={{
           clickable: true,
         }}
