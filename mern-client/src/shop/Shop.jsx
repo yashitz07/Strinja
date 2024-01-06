@@ -9,7 +9,7 @@ const Shop = () => {
 
   const whatsapp = async (phoneNumber, art) => {
     try {
-      const message = encodeURIComponent(`Hello, I'm interested in your art:- ${art.artName}.We will be interested in knowing furthur information`);
+      const message = encodeURIComponent(`Hello, I'm interested in your art:- ${art.artName}.We would be interested in knowing further information`);
       const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
       window.open(whatsappLink, '_blank');
     } catch (error) {
