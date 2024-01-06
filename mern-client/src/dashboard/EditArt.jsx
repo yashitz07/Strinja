@@ -16,7 +16,7 @@ const EditArt = () => {
     }
     // console.log(artObj);
     // update data
-    fetch(`http://localhost:5000/art/${id}`,{
+    fetch(`${import.meta.env.VITE_SERVER_URL}/art/${id}`,{
       method: "PATCH",
       headers: {
         "Content-type": "application/json",

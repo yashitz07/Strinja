@@ -13,7 +13,7 @@ const UploadArt = () => {
     }
     console.log(artObj);
     // send data to db
-    fetch("http://localhost:5000/upload-art",{
+    fetch(`${import.meta.env.VITE_SERVER_URL}/upload-art`,{
       method: "Post",
       headers: {
         "Content-type": "application/json",

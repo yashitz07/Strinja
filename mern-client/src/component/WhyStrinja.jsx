@@ -14,7 +14,7 @@ const WhyStrinja = () => {
     }
     console.log(userData);
     // send data to db
-    fetch("http://localhost:5000/join-us",{
+    fetch(`${import.meta.env.VITE_SERVER_URL}/join-us`,{
       method: "Post",
       headers: {
         "Content-type": "application/json",

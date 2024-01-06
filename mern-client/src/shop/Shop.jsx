@@ -4,7 +4,7 @@ import { Card } from 'flowbite-react';
 const Shop = () => {
   const [arts, setArts] = useState([]);
   useEffect( ()=>{
-    fetch("http://localhost:5000/all-arts").then(res => res.json()).then(data => setArts(data));
+    fetch(`${import.meta.env.VITE_SERVER_URL}/all-arts`).then(res => res.json()).then(data => setArts(data));
   },[])
 
   const whatsapp = async (phoneNumber, art) => {

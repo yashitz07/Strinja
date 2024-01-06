@@ -44,7 +44,7 @@ import WhyStrinja from "../component/WhyStrinja";
         {
           path: '/art/:id',
           element: <SingleArt/>,
-          loader: ({params})=> fetch(`http://localhost:5000/art/${params.id}`)
+          loader: ({params})=> fetch(`${import.meta.env.VITE_SERVER_URL}/art/${params.id}`)
         }
       ]
     },
@@ -66,7 +66,7 @@ import WhyStrinja from "../component/WhyStrinja";
       {
         path: '/admin/dashboard/edit-art/:id',
         element: <EditArt/>,
-        loader: ({params})=> fetch(`http://localhost:5000/art/${params.id}`)
+        loader: ({params})=> fetch(`${import.meta.env.VITE_SERVER_URL}/art/${params.id}`)
       },
       ]
     },{

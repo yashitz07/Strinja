@@ -3,12 +3,12 @@ import { Table } from 'flowbite-react';
 const ManageArt = () => {
   const [allArts, setAllArts] = useState([]);
   useEffect(()=>{
-    fetch("http://localhost:5000/all-arts").then(res => res.json()).then(data  => setAllArts(data));
+    fetch(`${import.meta.env.VITE_SERVER_URL}/all-arts`).then(res => res.json()).then(data  => setAllArts(data));
   },[])
   // delete data
   const handleDelete=(id)=>{
     console.log(id);
-    fetch(`http://localhost:5000/art/${id}`,{
+    fetch(`${import.meta.env.VITE_SERVER_URL}/art/${id}`,{
       method: "DELETE",
   }).then(res => res.json()).then(data=>
     {alert("Art is deleted successfully!!!")
