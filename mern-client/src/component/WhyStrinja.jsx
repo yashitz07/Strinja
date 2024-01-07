@@ -31,7 +31,7 @@ const WhyStrinja = () => {
      
     
   <div class="min-h-screen bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white">
-  <div class="lg:flex p-20 justify-center items-center">
+  <div class="lg:flex p-8 lg:p-20 justify-center items-center">
     <div class="lg:w-1/2 p-8 rounded-lg shadow-md mb-8 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white lg:mr-4">
       <h2 class="text-3xl lg:text-6xl font-bold mb-4">Why Choose Strinja?</h2>
       <ul class="list-disc pl-6">
