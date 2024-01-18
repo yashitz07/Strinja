@@ -11,8 +11,9 @@ const ArtCard = ({headline, arts}) => {
   // in this function ph no and art pass hoga as parameter
   const whatsapp = async (phoneNumber, art) => {
     try {
+      const internationalPhoneNumber = `+91${phoneNumber}`;
       const message = encodeURIComponent(`Hello, I'm interested in your art: ${art.artName}. We would be interested in knowing further information`);
-      const whatsappLink = `https://wa.me/${phoneNumber}?text=${message}`;
+      const whatsappLink = `https://wa.me/${internationalPhoneNumber}?text=${message}`;
       window.open(whatsappLink, '_blank');
     } catch (error) {
       console.error('Error generating WhatsApp link:', error);
