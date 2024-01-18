@@ -46,7 +46,7 @@ const MyFooter = () => {
           <Footer.Copyright href="#" by="Stringa™" year={2023} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} className="hover:text-blue-500"/>
-            <Footer.Icon href="#" icon={BsInstagram} className="hover:text-blue-500" />
+            <Footer.Icon href="https://www.instagram.com/strinja.shop?igsh=M21yNTd5eWdyaHY=" icon={BsInstagram} className="hover:text-blue-500" />
             <Footer.Icon href="#" icon={BsTwitter} className="hover:text-blue-500" />
             <Footer.Icon href="#" icon={BsThreads} className="hover:text-blue-500" />
           </div>
