@@ -28,7 +28,7 @@ const ContactUs = () => {
                         <div class="border-t border-gray-200 px-6 py-4">
                             <h3 class="text-lg font-medium text-gray-900">Contact</h3>
                             <p class="mt-1 text-gray-600">Email: strinja@shop.com</p>
-                            <p class="mt-1 text-gray-600">Phone: +1 23494 34993</p>
+                            <p class="mt-1 text-gray-600">Phone: +91 7879765601</p>
                         </div>
                     </div>
                 </div>

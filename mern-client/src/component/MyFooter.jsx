@@ -28,7 +28,7 @@ const MyFooter = () => {
             <div>
               <Footer.Title title="Follow us" className='text-black'/>
               <Footer.LinkGroup col>
-                <Footer.Link href=" https://www.instagram.com/strinja.shop?igsh=M21yNTd5eWdyaHY=" className="hover:text-blue-500">Instagram</Footer.Link>
+                <Footer.Link href=" https://www.instagram.com/strinja.shop?igsh=M21yNTd5eWdyaHY=" target="_blank" rel="noopener noreferrer" className="hover:text-blue-500">Instagram</Footer.Link>
                 <Footer.Link href="#" className="hover:text-blue-500">Twitter</Footer.Link>
               </Footer.LinkGroup>
             </div>
@@ -46,7 +46,7 @@ const MyFooter = () => {
           <Footer.Copyright href="#" by="Stringa™" year={2023} />
           <div className="mt-4 flex space-x-6 sm:mt-0 sm:justify-center">
             <Footer.Icon href="#" icon={BsFacebook} className="hover:text-blue-500"/>
-            <Footer.Icon href="https://www.instagram.com/strinja.shop?igsh=M21yNTd5eWdyaHY=" icon={BsInstagram} className="hover:text-blue-500" />
+            <Footer.Icon href="https://www.instagram.com/strinja.shop?igsh=M21yNTd5eWdyaHY=" target="_blank" rel="noopener noreferrer" icon={BsInstagram} className="hover:text-blue-500" />
             <Footer.Icon href="#" icon={BsTwitter} className="hover:text-blue-500" />
             <Footer.Icon href="#" icon={BsThreads} className="hover:text-blue-500" />
           </div>

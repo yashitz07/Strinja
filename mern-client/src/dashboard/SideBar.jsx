@@ -7,7 +7,7 @@ const SideBar = () => {
   return (
     <Sidebar aria-label="Sidebar with content separator example">
         <Sidebar.Logo href="#" img= {Propic} imgAlt="Stringa logo">
-        Stringa
+        Strinja
       </Sidebar.Logo>
       <Sidebar.Items>
         <Sidebar.ItemGroup>
