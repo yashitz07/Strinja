@@ -52,7 +52,7 @@ To get started with Strinja.Shop, follow these simple steps:
 3. Run the development server: `npm start`
 4. Access the website locally server side at `http://localhost:5000`
 5. Access the website locally client side at `http://localhost:5173`
-5. 
+6. For running client side command : `npm run dev`
 
 ## License
 
