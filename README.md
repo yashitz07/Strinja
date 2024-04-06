@@ -6,7 +6,7 @@
 <p align="center"><em>Crafted with love for a local business specializing in unique nail and string art</em></p>
 
 <p align="center">
-  <a href="[link/to/your/website](https://strinja.vercel.app/)" target="_blank">
+  <a href="https://strinja.vercel.app/" target="_blank">
     <img src="https://img.shields.io/badge/Visit-Strinja.Shop-blue" alt="Visit Strinja.Shop">
   </a>
 </p>
@@ -47,7 +47,7 @@ Strinja.Shop was the proud winner of Google Winter of Code (GWOC’24), recogniz
 
 To get started with Strinja.Shop, follow these simple steps:
 
-1. Clone the repository: `git clone [https://github.com/yashitz07/Strinja.git](https://github.com/yashitz07/Strinja)`
+1. Clone the repository: `git clone https://github.com/yashitz07/Strinja`
 2. Install dependencies: `npm install`
 3. Run the development server: `npm start`
 4. Access the website locally server side at `http://localhost:5000`
