@@ -5,9 +5,25 @@ const port = process.env.PORT || 5000
 const cors = require('cors')
 require('dotenv').config()
 // middleware
-app.use(cors());
-app.use(express.json());
+const allowedOrigins = [
+  process.env.FRONTEND_URL,                // AWS S3 or strinja.shop
+  "http://localhost:5173",                 // local dev
+  "https://strinja.vercel.app"    // current Vercel deployment
+];
 
+app.use(cors({
+  origin: (origin, callback) => {
+    // allow requests with no origin (e.g. mobile apps, curl, Postman)
+    if (!origin) return callback(null, true);
+    if (allowedOrigins.includes(origin)) {
+      return callback(null, true);
+    } else {
+      return callback(new Error("CORS not allowed for this origin"));
+    }
+  },
+  credentials: true,
+}));
+app.use(express.json());
 app.get('/', (req, res) => {
   res.send('Hello World!')
 })
